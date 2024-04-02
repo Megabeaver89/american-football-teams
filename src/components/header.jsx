@@ -6,17 +6,11 @@ function Header() {
   return (
     <header className="header">
       <img className="header__logo" src={logoHeader} alt="Логотип Место" />
-      <div className='header__links-container'>
-        {/* {isLoggedIn
-          ? <>
-            <p className='header__email'>{userEmail}</p>
-            <Link to='/sign-in' className='header__link' onClick={onLinkClick}>Выйти</Link>
-          </>
-          : <Link to={isRegistration ? '/sign-in' : '/sign-up'} className='header__link' onClick={onLinkClick}>
-            {isRegistration ? 'Войти' : 'Регистрация'}
-          </Link>
-        } */}
-      </div>
+      <ul className='header__links-container'>
+        {/* <li><Link to='/' className='header__link'>Выйти</Link></li> */}
+
+
+      </ul>
     </header>
   );
 }
