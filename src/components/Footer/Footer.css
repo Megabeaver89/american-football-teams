@@ -4,6 +4,17 @@
     padding-bottom: 60px;
 }
 
+.footer__copyright {
+    margin: 0;
+    max-width: 318px;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 121%;
+    color: #545454;
+}
+
 @media screen and (max-width: 1024px) {
     .footer {
         max-width: calc(100vw - 128px);
@@ -14,6 +25,10 @@
     .footer {
         max-width: calc(100vw - 64px);
         padding-bottom: 36px;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
     }
 }
 
