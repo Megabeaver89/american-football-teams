@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 // import { Link } from 'react-router-dom';
 import logoHeader from '../../images/logos/NFL_logo-min.svg'
 import './header.css'
@@ -9,20 +9,22 @@ import MenuItem from '../../interfaces/MenuItem'
 
 function Header(): JSX.Element {
   const [activeMenuItem, setActiveMenuItem] = useState<MenuItem[]>([])
+  const [isOpenedSubMenu, setIsOpenedSubMenu] = useState<boolean>(false)
   const [subMenuPosition, setSubMenuPosition] = useState<MouseCoordinates>({ x: 0, y: 0 })
 
   const handleMouseEnter = (event: React.MouseEvent<HTMLLIElement>, menuItems: MenuItem[]) => {
-    const { offsetLeft, offsetTop, offsetHeight } = event.currentTarget;
+    const { offsetLeft, offsetTop } = event.currentTarget;
     setActiveMenuItem(menuItems)
+    setIsOpenedSubMenu(true)
     setSubMenuPosition({
       x: offsetLeft,
-      y: offsetTop + offsetHeight
+      y: offsetTop
     })
   }
 
   const handleMouseLeave = () => {
-    setActiveMenuItem([]);
-  };
+    setIsOpenedSubMenu(false)
+  }
 
   return (
     <header className="header">
@@ -41,7 +43,12 @@ function Header(): JSX.Element {
       </nav>
 
       {activeMenuItem && (
-        <SubMenu items={activeMenuItem} position={subMenuPosition} />
+        <SubMenu
+          items={activeMenuItem}
+          position={subMenuPosition}
+          isOpened={isOpenedSubMenu}
+          stateChanger={setIsOpenedSubMenu}
+        />
       )}
     </header>
   );

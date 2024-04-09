@@ -1,0 +1,10 @@
+.submenu {
+  list-style: none;
+  display: none;
+  background-color: grey;
+  padding: 0;
+}
+
+.submenu_opened {
+  display: block;
+}
