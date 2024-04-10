@@ -4,3 +4,8 @@ export const MAIN_PATHNAME: string = '/'
 export const UKNOWN_PATHNAME: string = '*'
 export const GAME_HISTORY_PATHNAME: string = '/game-history'
 export const GAME_RULES_PATHNAME: string = '/rules'
+export const NFL_HISTORY_PATHNAME: string = '/nfl-history'
+export const LEAGUE_STRUCTURE_PATHNAME: string = '/league-structure'
+export const SEASON_STRUCTURE_PATHNAME: string = '/season-structure'
+export const DRAFT_PATHNAME: string = '/draft'
+
