@@ -1,10 +1,35 @@
 .submenu {
   list-style: none;
-  display: none;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
   background-color: grey;
   padding: 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,.16);
+  color: #000;
+  min-width: 200px;
+  padding: 16px 12px;
+  margin: 12px 0 0 0;
+  z-index: 10;
+  }
+
+.submenu::before {
+  background-color: grey;
+  content: "";
+  height: 16px;
+  position: absolute;
+  top: -8px;
+  transform: rotate(45deg);
+  width: 16px;
 }
 
 .submenu_opened {
-  display: block;
+  opacity: 1;
+  visibility: visible;
 }
+
+.submenu__item {
+
+}
+

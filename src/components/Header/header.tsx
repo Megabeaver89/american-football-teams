@@ -18,7 +18,7 @@ function Header(): JSX.Element {
     setIsOpenedSubMenu(true)
     setSubMenuPosition({
       x: offsetLeft,
-      y: offsetTop
+      y: offsetTop+35
     })
   }
 
@@ -31,18 +31,18 @@ function Header(): JSX.Element {
       <img className="header__logo" src={logoHeader} alt="Логотип Место" />
       <nav className='header__navigation'>
         <ul className='header__links-container'>
-          <li className='header__links-container_item'
+          <li className='header__link'
             onMouseEnter={(e) => handleMouseEnter(e, ABOUT_GAME_SUBMENU)}
             onMouseLeave={() => handleMouseLeave()}>
             Об игре
           </li>
-          <li className='header__links-container_item'
+          <li className='header__link'
             onMouseEnter={(e) => handleMouseEnter(e, NFL_SUBMENU)}
             onMouseLeave={() => handleMouseLeave()}>
             NFL
           </li>
-          <li className='header__links-container_item'>Команды</li>
-          <li className='header__links-container_item'>Superbowl</li>
+          <li className='header__link'>Команды</li>
+          <li className='header__link'>Superbowl</li>
         </ul>
       </nav>
 
