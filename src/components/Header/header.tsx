@@ -42,7 +42,7 @@ function Header(): JSX.Element {
             onMouseLeave={() => handleMouseLeave()}>
             NFL
           </li>
-          <li className={`header__link ${isOpenedSubMenu && activeMenuItem === TEAMS_SUBMENU}`}
+          <li className={`header__link ${isOpenedSubMenu && activeMenuItem === TEAMS_SUBMENU && 'header__link_active'}`}
             onMouseEnter={(e) => handleMouseEnter(e, TEAMS_SUBMENU)}
             onMouseLeave={() => handleMouseLeave()}>
             Команды
