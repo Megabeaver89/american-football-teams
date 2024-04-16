@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import logoHeader from '../../images/logos/NFL_logo-min.svg'
 import './header.css'
 import SubMenu from '../SubMenu/SubMenu.tsx'
-import { ABOUT_GAME_SUBMENU, NFL_SUBMENU } from '../../constants/subMenuItems.ts'
+import { ABOUT_GAME_SUBMENU, NFL_SUBMENU, SUPERBOWL_SUBMENU } from '../../constants/subMenuItems.ts'
 import MouseCoordinates from '../../interfaces/MouseCoordinates'
 import MenuItem from '../../interfaces/MenuItem'
 
@@ -42,7 +42,11 @@ function Header(): JSX.Element {
             NFL
           </li>
           <li className={`header__link ${isOpenedSubMenu && activeMenuItem === ABOUT_GAME_SUBMENU}`}>Команды</li>
-          <li className={`header__link ${isOpenedSubMenu && activeMenuItem === ABOUT_GAME_SUBMENU}`}>Superbowl</li>
+          <li className={`header__link ${isOpenedSubMenu && activeMenuItem === SUPERBOWL_SUBMENU && 'header__link_active'}`}
+          onMouseEnter={(e) => handleMouseEnter(e, SUPERBOWL_SUBMENU)}
+          onMouseLeave={() => handleMouseLeave()}>
+            Superbowl
+            </li>
         </ul>
       </nav>
 

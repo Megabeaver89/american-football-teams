@@ -8,3 +8,6 @@ export const NFL_HISTORY_PATHNAME: string = '/nfl-history'
 export const LEAGUE_STRUCTURE_PATHNAME: string = '/league-structure'
 export const SEASON_STRUCTURE_PATHNAME: string = '/season-structure'
 export const DRAFT_PATHNAME: string = '/draft'
+
+export const SUPERBOWL_WHAT_IS_PATHNAME: string = '/superbowl'
+export const SUPERBOWL_CHAMPIONS_PATHNAME: string = '/superbowl-champions'
