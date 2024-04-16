@@ -31,18 +31,18 @@ function Header(): JSX.Element {
       <img className="header__logo" src={logoHeader} alt="Логотип Место" />
       <nav className='header__navigation'>
         <ul className='header__links-container'>
-          <li className='header__link'
+          <li className={`header__link ${isOpenedSubMenu && activeMenuItem === ABOUT_GAME_SUBMENU  && 'header__link_active'}`}
             onMouseEnter={(e) => handleMouseEnter(e, ABOUT_GAME_SUBMENU)}
             onMouseLeave={() => handleMouseLeave()}>
             Об игре
           </li>
-          <li className='header__link'
+          <li className={`header__link ${isOpenedSubMenu && activeMenuItem === NFL_SUBMENU && 'header__link_active'}`}
             onMouseEnter={(e) => handleMouseEnter(e, NFL_SUBMENU)}
             onMouseLeave={() => handleMouseLeave()}>
             NFL
           </li>
-          <li className='header__link'>Команды</li>
-          <li className='header__link'>Superbowl</li>
+          <li className={`header__link ${isOpenedSubMenu && activeMenuItem === ABOUT_GAME_SUBMENU}`}>Команды</li>
+          <li className={`header__link ${isOpenedSubMenu && activeMenuItem === ABOUT_GAME_SUBMENU}`}>Superbowl</li>
         </ul>
       </nav>
 
