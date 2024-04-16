@@ -1,8 +1,4 @@
-type Pathname = '/sign-up' | '/sign-in' | '/' | '*' | '/game-history' | '/rules' | '/nfl-history' | '/league-structure' | '/season-structure' | '/draft'
-| '/cardinals' | '/falcons' | '/ravens' | '/bills' | '/panthers' | '/bears' | '/bengals' | '/browns' | '/cowboys' | '/broncos'
-| '/lions' | '/packers' | '/texans' | '/colts' | '/jaguars' | '/chiefs' | '/raiders' | '/chargers' | '/rams' | '/dolphins'
-| '/vikings' | '/patriots' | '/saints' | '/giants' | '/jets' | '/eagles' | '/steelers' | '/49ers' | '/seahawks'
-| '/buccaneers' | '/titans' | '/commanders'| '/what-is-superbowl' | '/superbowl-champions'
+import { Pathname } from '../types/submenuTypes'
 
 export const REGISTER_PATHNAME: Pathname = '/sign-up'
 export const LOGIN_PATHNAME: Pathname = '/sign-in'

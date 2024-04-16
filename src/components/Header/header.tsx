@@ -4,7 +4,7 @@ import logoHeader from '../../images/logos/NFL_logo-min.svg'
 
 import './header.css'
 import SubMenu from '../SubMenu/SubMenu.tsx'
-import { ABOUT_GAME_SUBMENU, NFL_SUBMENU, SUPERBOWL_SUBMENU } from '../../constants/subMenuItems.ts'
+import { ABOUT_GAME_SUBMENU, NFL_SUBMENU, SUPERBOWL_SUBMENU, TEAMS_SUBMENU } from '../../constants/subMenuItems.ts'
 import MouseCoordinates from '../../interfaces/MouseCoordinates'
 import MenuItem from '../../interfaces/MenuItem'
 
@@ -19,7 +19,7 @@ function Header(): JSX.Element {
     setIsOpenedSubMenu(true)
     setSubMenuPosition({
       x: offsetLeft,
-      y: offsetTop+35
+      y: offsetTop + 35
     })
   }
 
@@ -32,7 +32,7 @@ function Header(): JSX.Element {
       <img className="header__logo" src={logoHeader} alt="Логотип Место" />
       <nav className='header__navigation'>
         <ul className='header__links-container'>
-          <li className={`header__link ${isOpenedSubMenu && activeMenuItem === ABOUT_GAME_SUBMENU  && 'header__link_active'}`}
+          <li className={`header__link ${isOpenedSubMenu && activeMenuItem === ABOUT_GAME_SUBMENU && 'header__link_active'}`}
             onMouseEnter={(e) => handleMouseEnter(e, ABOUT_GAME_SUBMENU)}
             onMouseLeave={() => handleMouseLeave()}>
             Об игре
@@ -42,12 +42,16 @@ function Header(): JSX.Element {
             onMouseLeave={() => handleMouseLeave()}>
             NFL
           </li>
-          <li className={`header__link ${isOpenedSubMenu && activeMenuItem === ABOUT_GAME_SUBMENU}`}>Команды</li>
+          <li className={`header__link ${isOpenedSubMenu && activeMenuItem === TEAMS_SUBMENU}`}
+            onMouseEnter={(e) => handleMouseEnter(e, TEAMS_SUBMENU)}
+            onMouseLeave={() => handleMouseLeave()}>
+            Команды
+          </li>
           <li className={`header__link ${isOpenedSubMenu && activeMenuItem === SUPERBOWL_SUBMENU && 'header__link_active'}`}
-          onMouseEnter={(e) => handleMouseEnter(e, SUPERBOWL_SUBMENU)}
-          onMouseLeave={() => handleMouseLeave()}>
+            onMouseEnter={(e) => handleMouseEnter(e, SUPERBOWL_SUBMENU)}
+            onMouseLeave={() => handleMouseLeave()}>
             Superbowl
-            </li>
+          </li>
         </ul>
       </nav>
 

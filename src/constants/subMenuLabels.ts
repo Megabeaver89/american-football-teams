@@ -1,10 +1,4 @@
-type Label = 'История' | 'Правила' | 'История лиги' | 'Структура лиги' | 'Структура сезона' | 'Драфт' | 'Что это?' | 'Чемпионы'
-| 'Arizona Cardinals' | 'Atlanta Falcons' | 'Baltimore Ravens' | 'Buffalo Bills' | 'Carolina Panthers' | 'Chicago Bears'
-| 'Cincinnati Bengals' | 'Cleveland Browns' | 'Dallas Cowboys' | 'Denver Broncos' | 'Detroit Lions' | 'Green Bay Packers' | 'Houston Texans'
-| 'Indianapolis Colts' | 'Jacksonville Jaguars' | 'Kansas City Chiefs' | 'Las Vegas Raiders' | 'Los Angeles Chargers' | 'Los Angeles Rams'
-| 'Miami Dolphins' | 'Minnesota Vikings' | 'New England Patriots' | 'New Orleans Saints' | 'New York Giants' | 'New York Jets' | 'Philadelphia Eagles'
-| 'Pittsburgh Steelers' | 'San Francisco 49ers' | 'Seattle Seahawks' | 'Tampa Bay Buccaneers' | 'Tennessee Titans' | 'Washington Commanders'
-
+import { Label } from "../types/submenuTypes"
 export const GAME_HISTORY_LABEL: Label = 'История'
 export const GAME_RULES_LABEL: Label = 'Правила'
 export const NFL_HISTORY_LABEL: Label = 'История лиги'

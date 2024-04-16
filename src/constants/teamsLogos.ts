@@ -13,7 +13,7 @@ import packersLogo from '../images/logos/Green_Bay_Packers_logo-min.svg'
 import texansLogo from '../images/logos/Houston_Texans_logo-min.svg'
 import coltsLogo from '../images/logos/Indianapolis_Colts_logo-min.svg'
 import jaguarsLogo from '../images/logos/Jacksonville_Jaguars_logo-min.svg'
-// import chiefsLogo from '../images/logos/Kansas_City_Chiefs_logo-min.svg'
+import chiefsLogo from '../images/logos/Kansas_City_Chiefs_logo-min.svg'
 import raidersLogo from '../images/logos/Las_Vegas_Raiders_logo-min.svg'
 import chargersLogo from '../images/logos/Los_Angeles_Chargers_logo-min.svg'
 import ramsLogo from '../images/logos/Los_Angeles_Rams_logo-min.svg'
@@ -47,7 +47,7 @@ export {
   texansLogo,
   coltsLogo,
   jaguarsLogo,
-  // chiefsLogo,
+  chiefsLogo,
   raidersLogo,
   chargersLogo,
   ramsLogo,

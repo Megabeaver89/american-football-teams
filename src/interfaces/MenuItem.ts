@@ -1,6 +1,8 @@
+import { Pathname, Label } from '../types/submenuTypes'
+
 interface MenuItem {
-  label: string,
-  link: string,
+  label: Label,
+  link: Pathname,
   logo?: string
 }
 export default MenuItem
