@@ -1,11 +1,10 @@
 .submenu {
   max-height: 300px;
+  max-width: fit-content;
   list-style: none;
-  display: block;
   opacity: 0;
   visibility: hidden;
   background-color: grey;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -34,9 +33,7 @@
   visibility: visible;
 }
 
-.submenu_item {
-  max-width: 100%;
-}
+.submenu__item {}
 
 .submenu__link {
   width: 100%;
