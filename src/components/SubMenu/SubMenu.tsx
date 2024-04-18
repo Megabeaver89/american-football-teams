@@ -28,7 +28,7 @@ function SubMenu({ items, position, isOpened, stateChanger }: SubMenuProps): JSX
   }
 
   return (
-    <ul className={`submenu ${isOpened && 'submenu_opened'}`} style={submenuStyle} onMouseEnter={handleSubMenuMouseEnter} onMouseLeave={handleSubMenuMouseLeave}>
+    <ul className={`submenu ${isOpened && 'submenu_opened'} ${items[0].logo && 'submenu_size-large'}`} style={submenuStyle} onMouseEnter={handleSubMenuMouseEnter} onMouseLeave={handleSubMenuMouseLeave}>
       {items.map((item, index) => (
         <li key={index} className='submenu__item'>
           <Link to={item.link} className='submenu__link'>
