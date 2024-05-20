@@ -1,6 +1,7 @@
 import './App.css'
 import Header from '../Header/header.tsx'
 import Footer from "../Footer/Footer.tsx"
+import React from 'react'
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <Footer />
 
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

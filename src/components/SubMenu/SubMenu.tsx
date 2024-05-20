@@ -1,9 +1,9 @@
 import React from 'react'
 import './SubMenu.css'
 import { Link } from 'react-router-dom'
-import { useDispatch, useSelector } from 'react-redux'
+import { useSelector } from 'react-redux'
 import { RootState } from '../../store/rootReducer'
-import { toggleSubMenu } from '../../store/slices/subMenuSlice.ts'
+import useMouseHandler from '../../hooks/useMouseHandler.ts'
 
 
 function SubMenu(): JSX.Element {
@@ -13,7 +13,8 @@ function SubMenu(): JSX.Element {
     position: state.submenu.position
   })
   )
-  const dispatch = useDispatch()
+
+  const { handleMouseEnter, handleMouseLeave } = useMouseHandler()
   const { x, y } = position
   const submenuStyle: React.CSSProperties = {
     position: 'absolute',
@@ -21,21 +22,14 @@ function SubMenu(): JSX.Element {
     top: `${y}px`
   }
 
-  const handleSubMenuMouseEnter = () => {
-    dispatch(toggleSubMenu(true))
-  }
-
-  const handleSubMenuMouseLeave = () => {
-    dispatch(toggleSubMenu(false))
-  }
-
   return (
     <ul className={`submenu ${isOpened && 'submenu_opened'}`}
       style={submenuStyle}
-      onMouseEnter={handleSubMenuMouseEnter}
-      onMouseLeave={handleSubMenuMouseLeave}>
+      onMouseEnter={handleMouseEnter(items, false)}
+      onMouseLeave={handleMouseLeave}>
       {items.map((item, index) => (
-        <li key={index} className='submenu__item'>
+        <li key={index}
+          className='submenu__item'>
           <Link to={item.link} className='submenu__link'>
             {item.logo && <img className='submenu_link-logo' src={item.logo} alt={`${item.label}-logo`} />}
             {item.label}
