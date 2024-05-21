@@ -1,12 +1,17 @@
 .App {
-    margin: 0 auto;
-    min-height: 100vh;
-    background-color: #000000;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    text-rendering: optimizeLegibility;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #000000;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.link:hover {
+  opacity: 1;
+  transition: opacity .3s;
 }

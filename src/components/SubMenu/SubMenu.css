@@ -4,7 +4,7 @@
   list-style: none;
   opacity: 0;
   visibility: hidden;
-  background-color: grey;
+  background-color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -19,7 +19,7 @@
 }
 
 .submenu::before {
-  background-color: grey;
+  background-color: #FFFFFF;
   content: "";
   height: 16px;
   position: absolute;
@@ -43,12 +43,13 @@
   font-size: 16px;
   line-height: 122%;
   margin: 0;
-  color: #FFFFFF;
+  color: rgb(83, 83, 83);
   text-decoration: none;
   display: flex;
   flex-direction: row;
   column-gap: 5px;
   align-items: center;
+  opacity: .7;
 }
 
 .submenu_link-logo {

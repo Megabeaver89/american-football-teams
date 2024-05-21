@@ -1,5 +1,6 @@
 import React from 'react'
 import './SubMenu.css'
+import '../App/App.css'
 import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../store/rootReducer'
@@ -30,7 +31,7 @@ function SubMenu(): JSX.Element {
       {items.map((item, index) => (
         <li key={index}
           className='submenu__item'>
-          <Link to={item.link} className='submenu__link'>
+          <Link to={item.link} className='link submenu__link'>
             {item.logo && <img className='submenu_link-logo' src={item.logo} alt={`${item.label}-logo`} />}
             {item.label}
           </Link>
