@@ -82,7 +82,7 @@ import {
   TAMPA_BAY_BUCCANEERS_LABEL,
   TENNESSEE_TITANS_LABEL,
   WASHINGTON_COMMANDERS_LABEL
-} from './subMenuLabels.ts'
+} from './teamLabels.ts'
 
 import {
   cardinalsLogo,

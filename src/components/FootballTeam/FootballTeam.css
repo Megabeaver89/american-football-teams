@@ -1,0 +1,23 @@
+.football-team {
+  width: 100%;
+  color: #333333;
+}
+
+.football-team__header {
+  width: 100%;
+  min-height: 300px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.football-team__info {
+  max-width: fit-content;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 122%;
+  letter-spacing: 2px;
+  padding-top: 100px;
+}
