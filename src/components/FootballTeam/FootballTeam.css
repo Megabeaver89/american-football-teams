@@ -3,7 +3,7 @@
   color: #333333;
 }
 
-.football-team__header {
+.football-team__container {
   width: 100%;
   min-height: 300px;
   background-position: center;
@@ -14,14 +14,30 @@
   padding-top: 50px;
 }
 
+.football-team__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .football-team__name {
   max-width: fit-content;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
-  font-style: oblique;
+  font-style: normal;
   font-weight: 600;
   font-size: 48px;
   line-height: 122%;
   letter-spacing: 2px;
+  padding-bottom: 30px;
+}
+
+.football-team__location {
+  max-width: fit-content;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 122%;
 }
 
 .football-team__logo {

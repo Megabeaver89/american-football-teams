@@ -5,6 +5,8 @@ export default interface Team {
   link: Pathname,
   logo: string,
   conference: string,
-  division: string
+  division: string,
+  wordmark: string,
+  uniform: string
 }
 
