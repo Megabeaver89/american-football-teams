@@ -4,7 +4,9 @@ import MouseCoordinates from './MouseCoordinates'
 export interface MenuItem {
   label: Label,
   link: Pathname,
-  logo?: string
+  logo?: string,
+  conference?: string,
+  division?: string
 }
 
 export interface MenuState {

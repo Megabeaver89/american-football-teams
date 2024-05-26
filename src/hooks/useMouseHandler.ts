@@ -1,7 +1,7 @@
 import { useCallback } from 'react'
 import { useDispatch } from 'react-redux'
 import { changePosition, fillSubMenu, toggleSubMenu } from '../store/slices/subMenuSlice.ts'
-import { MenuItem } from '../interfaces/subMenu'
+import { MenuItem } from '../interfaces/SubMenu.ts'
 
 const useMouseHandler = () => {
   const dispatch = useDispatch()

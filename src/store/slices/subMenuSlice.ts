@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit"
-import { MenuState, MenuItem } from "../../interfaces/subMenu"
+import { MenuState, MenuItem } from "../../interfaces/SubMenu"
 import MouseCoordinates from "../../interfaces/MouseCoordinates"
 
 const initialState: MenuState = {
