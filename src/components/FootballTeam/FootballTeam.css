@@ -11,13 +11,14 @@
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-around;
-  padding-top: 50px;
+  margin: 50px 20px 0;
 }
 
 .football-team__info {
-  width: 100%;
+  width: fit-content;
   display: flex;
   flex-direction: column;
+  padding-top: 50px;
 }
 
 .football-team__name {
@@ -28,7 +29,7 @@
   font-size: 48px;
   line-height: 122%;
   letter-spacing: 2px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .football-team__location {
@@ -40,6 +41,11 @@
   line-height: 122%;
 }
 
-.football-team__logo {
+.football-team__logo-container {
   width: 500px;
+  height: 500px;
+}
+
+.football-team__logo {
+  width: 100%;
 }

@@ -1,6 +1,7 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit"
-import { MenuState, MenuItem } from "../../interfaces/SubMenu"
-import MouseCoordinates from "../../interfaces/MouseCoordinates"
+import { MenuState } from "../../types/interfaces/SubMenu"
+import MouseCoordinates from "../../types/interfaces/MouseCoordinates.ts"
+import { SubMenuItems } from "../../types/submenuTypes"
 
 const initialState: MenuState = {
   activeMenuItems: [],
@@ -18,7 +19,7 @@ export const subMenuSlice = createSlice({
     toggleSubMenu(state, action: PayloadAction<boolean>) {
       state.isOpenedSubMenu = action.payload
     },
-    fillSubMenu(state, action: PayloadAction<MenuItem[]>) {
+    fillSubMenu(state, action: PayloadAction<SubMenuItems>) {
       state.activeMenuItems = action.payload
     },
     changePosition(state, action: PayloadAction<MouseCoordinates>) {

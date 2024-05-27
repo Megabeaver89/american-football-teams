@@ -1,11 +1,17 @@
 import React from 'react'
 import Content from '../Content/Content.tsx'
 import './FootballTeam.css'
-import { BUFFALO_BILLS_TEAM } from '../../constants/team.ts'
+import { useSelector } from 'react-redux'
+import { RootState } from '../../store/rootReducer.ts'
 
 function FotballTeam(): JSX.Element {
-
-  const { label, link, logo, division, conference } = BUFFALO_BILLS_TEAM
+  const { label, logo, division, conference } = useSelector((state: RootState) => ({
+    label: state.teamActive.label,
+    logo: state.teamActive.logo,
+    division: state.teamActive.division,
+    conference: state.teamActive.conference
+  })
+  )
 
   return (
     <Content>
@@ -15,10 +21,11 @@ function FotballTeam(): JSX.Element {
             <div className='football-team__name'>{label}</div>
             <div className='football-team__location'>{`${conference}, ${division}`}</div>
           </div>
-          <img className='football-team__logo' src={logo} alt={label} />
+          <div className='football-team__logo-container'>
+            <img className='football-team__logo' src={logo} alt={label} />
+          </div>
 
         </div>
-
       </div>
     </Content>
   )

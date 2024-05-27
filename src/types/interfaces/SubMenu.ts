@@ -1,16 +1,14 @@
-import { Pathname, Label } from '../types/submenuTypes'
+import { Pathname, Label, SubMenuItems } from '../submenuTypes'
 import MouseCoordinates from './MouseCoordinates'
 
 export interface MenuItem {
   label: Label,
   link: Pathname,
-  logo?: string,
-  conference?: string,
-  division?: string
 }
 
 export interface MenuState {
-  activeMenuItems: MenuItem[];
+  activeMenuItems: SubMenuItems;
   isOpenedSubMenu: boolean;
   position: MouseCoordinates;
 }
+

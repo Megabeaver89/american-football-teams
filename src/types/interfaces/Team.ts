@@ -1,4 +1,4 @@
-import { Pathname, Label } from '../types/submenuTypes'
+import { Pathname, Label } from '../submenuTypes'
 
 export default interface Team {
   label: Label,
