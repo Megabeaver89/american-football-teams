@@ -39,9 +39,9 @@ function SubMenu(): JSX.Element {
       onMouseEnter={handleMouseEnter(items, false)}
       onMouseLeave={handleMouseLeave}>
       {items.map((item: SubMenuItem, index: number) => (
-        <li key={index}
-          className='submenu__item'>
-          <Link to={item.link}
+        <li key={index} className='submenu__item'>
+          <Link
+            to={item.link}
             className='link submenu__link'
             onClick={handleClickLink(isTeam(item) ? item : undefined)}>
             {isTeam(item) && <img className='submenu_link-logo' src={item.logo} alt={`${item.label}-logo`} />}
