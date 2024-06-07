@@ -1,9 +1,9 @@
 import React from 'react'
 import Content from '../Content/Content.tsx'
-import TeamInfo from '../TeamInfoNavigation/TeamInfoNavigation.tsx'
 import './FootballTeam.css'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../store/rootReducer.ts'
+import TeamInfoNavigation from '../TeamInfoNavigation/TeamInfoNavigation.tsx'
 
 
 function FotballTeam(): JSX.Element {
@@ -28,7 +28,7 @@ function FotballTeam(): JSX.Element {
           </div>
         </div>
       </div>
-      <TeamInfo />
+      <TeamInfoNavigation />
     </Content>
   )
 }

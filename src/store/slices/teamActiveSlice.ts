@@ -8,7 +8,9 @@ const initialState: Team = {
   conference: '',
   division: '',
   wordmark: '',
-  uniform: ''
+  uniform: '',
+  history: '',
+  stadium: '',
 }
 
 export const teamActiveSlice = createSlice({
@@ -23,6 +25,8 @@ export const teamActiveSlice = createSlice({
       state.division = action.payload.division
       state.wordmark = action.payload.wordmark
       state.uniform = action.payload.uniform
+      state.history = action.payload.history
+      state.stadium = action.payload.stadium
     }
   }
 })

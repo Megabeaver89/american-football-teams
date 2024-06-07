@@ -7,6 +7,8 @@ export default interface Team {
   conference: string,
   division: string,
   wordmark: string,
-  uniform: string
+  uniform: string,
+  history: string,
+  stadium: string,
 }
 

@@ -2,12 +2,20 @@ import './TeamInfoNavigation.css'
 import React, { useState } from 'react'
 import ActiveButtonState from '../../types/interfaces/ActiveButtonState.ts'
 import { teamInfoList } from '../../constants/teamInfo.ts'
+import { useSelector } from 'react-redux'
+import { RootState } from '../../store/rootReducer.ts'
 
-function TeamInfo(): JSX.Element {
+function TeamInfoNavigation(): JSX.Element {
 
   const [activeBtn, setActiveBtn] = useState<ActiveButtonState>({
     num: 0,
   })
+
+  const { history, stadium } = useSelector((state: RootState) => ({
+    history: state.teamActive.history,
+    stadium: state.teamActive.stadium
+  })
+  )
 
   const handleClickBtn = (index: number) => {
     setActiveBtn({
@@ -27,9 +35,9 @@ function TeamInfo(): JSX.Element {
         </li>)
       })}
     </ul>
-      <div className='team-info__btn'>22222</div>
+      <div className='team-info__btn'>{history}</div>
     </>
   )
 }
 
-export default TeamInfo
+export default TeamInfoNavigation

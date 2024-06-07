@@ -2,6 +2,41 @@ import { NORTH_DIVISION, EAST_DIVISION, WEST_DIVISION, SOUTH_DIVISION } from './
 import { AFC_CONFERENCE, NFC_CONFERENCE } from './footeballConfernce.ts'
 
 import {
+  PATRIOTS_HISTORY,
+  COWBOYS_HISTORY,
+  PACKERS_HISTORY,
+  FORTY_NINERS_HISTORY,
+  STEELERS_HISTORY,
+  CARDINALS_HISTORY,
+  FALCONS_HISTORY,
+  RAVENS_HISTORY,
+  BILLS_HISTORY,
+  PANTHERS_HISTORY,
+  BEARS_HISTORY,
+  BENGALS_HISTORY,
+  BROWNS_HISTORY,
+  BRONCOS_HISTORY,
+  LIONS_HISTORY,
+  TEXANS_HISTORY,
+  COLTS_HISTORY,
+  JAGUARS_HISTORY,
+  CHIEFS_HISTORY,
+  RAIDERS_HISTORY,
+  CHARGERS_HISTORY,
+  RAMS_HISTORY,
+  DOLPHINS_HISTORY,
+  VIKINGS_HISTORY,
+  SAINTS_HISTORY,
+  GIANTS_HISTORY,
+  JETS_HISTORY,
+  EAGLES_HISTORY,
+  SEAHAWKS_HISTORY,
+  TITANS_HISTORY,
+  COMMANDERS_HISTORY,
+  BUCCANEERS_HISTORY,
+} from './teamHistory.ts'
+
+import {
   ARIZONA_CARDINALS_PATHNAME,
   ATLANTA_FALCONS_PATHNAME,
   BALTIMORE_RAVENS_PATHNAME,
@@ -185,7 +220,8 @@ export const ARIZONA_CARDINALS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: WEST_DIVISION,
   uniform: cardinalsUniform,
-  wordmark: cardinalsWordmark
+  wordmark: cardinalsWordmark,
+  history: CARDINALS_HISTORY
 }
 
 export const ATLANTA_FALCONS_TEAM: Team = {
@@ -195,7 +231,8 @@ export const ATLANTA_FALCONS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: SOUTH_DIVISION,
   uniform: falconsUniform,
-  wordmark: falconsWordmark
+  wordmark: falconsWordmark,
+  history: FALCONS_HISTORY
 }
 
 export const BALTIMORE_RAVENS_TEAM: Team = {
@@ -205,7 +242,8 @@ export const BALTIMORE_RAVENS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: NORTH_DIVISION,
   uniform: ravensUniform,
-  wordmark: ravensWordmark
+  wordmark: ravensWordmark,
+  history: RAVENS_HISTORY
 }
 
 export const BUFFALO_BILLS_TEAM: Team = {
@@ -215,7 +253,8 @@ export const BUFFALO_BILLS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: EAST_DIVISION,
   uniform: billsUniform,
-  wordmark: billsWordmark
+  wordmark: billsWordmark,
+  history: BILLS_HISTORY
 }
 
 export const CAROLINA_PANTHERS_TEAM: Team = {
@@ -225,7 +264,8 @@ export const CAROLINA_PANTHERS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: SOUTH_DIVISION,
   uniform: panthersUniform,
-  wordmark: panthersWordmark
+  wordmark: panthersWordmark,
+  history: PANTHERS_HISTORY
 }
 
 export const CHICAGO_BEARS_TEAM: Team = {
@@ -235,7 +275,8 @@ export const CHICAGO_BEARS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: NORTH_DIVISION,
   uniform: bearsUniform,
-  wordmark: bearsWordmark
+  wordmark: bearsWordmark,
+  history: BEARS_HISTORY
 }
 
 export const CINCINNATI_BENGALS_TEAM: Team = {
@@ -245,7 +286,8 @@ export const CINCINNATI_BENGALS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: NORTH_DIVISION,
   uniform: bengalsUniform,
-  wordmark: bengalsWordmark
+  wordmark: bengalsWordmark,
+  history: BENGALS_HISTORY
 }
 
 export const CLEVELAND_BROWNS_TEAM: Team = {
@@ -255,7 +297,8 @@ export const CLEVELAND_BROWNS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: NORTH_DIVISION,
   uniform: brownsUniform,
-  wordmark: brownsWordmark
+  wordmark: brownsWordmark,
+  history: BROWNS_HISTORY
 }
 
 export const DALLAS_COWBOYS_TEAM: Team = {
@@ -265,7 +308,8 @@ export const DALLAS_COWBOYS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: EAST_DIVISION,
   uniform: cowboysUniform,
-  wordmark: cowboysWordmark
+  wordmark: cowboysWordmark,
+  history: COWBOYS_HISTORY
 }
 
 export const DENVER_BRONCOS_TEAM: Team = {
@@ -275,7 +319,8 @@ export const DENVER_BRONCOS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: WEST_DIVISION,
   uniform: broncosUniform,
-  wordmark: broncosWordmark
+  wordmark: broncosWordmark,
+  history: BRONCOS_HISTORY
 }
 
 export const DETROIT_LIONS_TEAM: Team = {
@@ -285,7 +330,8 @@ export const DETROIT_LIONS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: NORTH_DIVISION,
   uniform: lionsUniform,
-  wordmark: lionsWordmark
+  wordmark: lionsWordmark,
+  history: LIONS_HISTORY
 }
 
 export const GREEN_BAY_PACKERS_TEAM: Team = {
@@ -295,7 +341,8 @@ export const GREEN_BAY_PACKERS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: NORTH_DIVISION,
   uniform: packersUniform,
-  wordmark: packersWordmark
+  wordmark: packersWordmark,
+  history: PACKERS_HISTORY
 }
 
 export const HOUSTON_TEXANS_TEAM: Team = {
@@ -305,7 +352,8 @@ export const HOUSTON_TEXANS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: SOUTH_DIVISION,
   uniform: texansUniform,
-  wordmark: texansWordmark
+  wordmark: texansWordmark,
+  history: TEXANS_HISTORY
 }
 
 export const INDIANAPOLIS_COLTS_TEAM: Team = {
@@ -315,7 +363,8 @@ export const INDIANAPOLIS_COLTS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: SOUTH_DIVISION,
   uniform: coltsUniform,
-  wordmark: coltsWordmark
+  wordmark: coltsWordmark,
+  history: COLTS_HISTORY
 }
 
 export const JACKSONVILLE_JAGUARS_TEAM: Team = {
@@ -325,7 +374,8 @@ export const JACKSONVILLE_JAGUARS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: SOUTH_DIVISION,
   uniform: jaguarsUniform,
-  wordmark: jaguarsWordmark
+  wordmark: jaguarsWordmark,
+  history: JAGUARS_HISTORY
 }
 
 export const KANSAS_CITY_CHIEFS_TEAM: Team = {
@@ -335,7 +385,8 @@ export const KANSAS_CITY_CHIEFS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: WEST_DIVISION,
   uniform: chiefsUniform,
-  wordmark: chiefsWordmark
+  wordmark: chiefsWordmark,
+  history: CHIEFS_HISTORY
 }
 
 export const LAS_VEGAS_RAIDERS_TEAM: Team = {
@@ -345,7 +396,8 @@ export const LAS_VEGAS_RAIDERS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: WEST_DIVISION,
   uniform: raidersUniform,
-  wordmark: raidersWordmark
+  wordmark: raidersWordmark,
+  history: RAIDERS_HISTORY
 }
 
 export const LOS_ANGELES_CHARGERS_TEAM: Team = {
@@ -355,7 +407,8 @@ export const LOS_ANGELES_CHARGERS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: WEST_DIVISION,
   uniform: chargersUniform,
-  wordmark: chargersWordmark
+  wordmark: chargersWordmark,
+  history: CHARGERS_HISTORY
 }
 
 export const LOS_ANGELES_RAMS_TEAM: Team = {
@@ -365,7 +418,8 @@ export const LOS_ANGELES_RAMS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: WEST_DIVISION,
   uniform: ramsUniform,
-  wordmark: ramsWordmark
+  wordmark: ramsWordmark,
+  history: RAMS_HISTORY
 }
 
 export const MIAMI_DOLPHINS_TEAM: Team = {
@@ -375,7 +429,8 @@ export const MIAMI_DOLPHINS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: EAST_DIVISION,
   uniform: dolphinsUniform,
-  wordmark: dolphinsWordmark
+  wordmark: dolphinsWordmark,
+  history: DOLPHINS_HISTORY
 }
 
 export const MINNESOTA_VIKINGS_TEAM: Team = {
@@ -385,7 +440,8 @@ export const MINNESOTA_VIKINGS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: NORTH_DIVISION,
   uniform: vikingsUniform,
-  wordmark: vikingsWordmark
+  wordmark: vikingsWordmark,
+  history: VIKINGS_HISTORY
 }
 
 export const NEW_ENGLAND_PATRIOTS_TEAM: Team = {
@@ -395,7 +451,8 @@ export const NEW_ENGLAND_PATRIOTS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: EAST_DIVISION,
   uniform: patriotsUniform,
-  wordmark: patriotsWordmark
+  wordmark: patriotsWordmark,
+  history: PATRIOTS_HISTORY
 }
 
 export const NEW_ORLEANS_SAINTS_TEAM: Team = {
@@ -405,7 +462,8 @@ export const NEW_ORLEANS_SAINTS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: SOUTH_DIVISION,
   uniform: saintsUniform,
-  wordmark: saintsWordmark
+  wordmark: saintsWordmark,
+  history: SAINTS_HISTORY
 }
 
 export const NEW_YORK_GIANTS_TEAM: Team = {
@@ -415,7 +473,8 @@ export const NEW_YORK_GIANTS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: EAST_DIVISION,
   uniform: giantsUniform,
-  wordmark: giantsWordmark
+  wordmark: giantsWordmark,
+  history: GIANTS_HISTORY
 }
 
 export const NEW_YORK_JETS_TEAM: Team = {
@@ -425,7 +484,8 @@ export const NEW_YORK_JETS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: EAST_DIVISION,
   uniform: jetsUniform,
-  wordmark: jetsWordmark
+  wordmark: jetsWordmark,
+  history: JETS_HISTORY
 }
 
 export const PHILADELPHIA_EAGLES_TEAM: Team = {
@@ -435,7 +495,8 @@ export const PHILADELPHIA_EAGLES_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: EAST_DIVISION,
   uniform: eaglesUniform,
-  wordmark: eaglesWordmark
+  wordmark: eaglesWordmark,
+  history: EAGLES_HISTORY
 }
 
 export const PITTSBURGH_STEELERS_TEAM: Team = {
@@ -445,7 +506,8 @@ export const PITTSBURGH_STEELERS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: NORTH_DIVISION,
   uniform: steelersUniform,
-  wordmark: steelersWordmark
+  wordmark: steelersWordmark,
+  history: STEELERS_HISTORY
 }
 
 export const SAN_FRANCISCO_49ERS_TEAM: Team = {
@@ -455,7 +517,8 @@ export const SAN_FRANCISCO_49ERS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: WEST_DIVISION,
   uniform: ersUniform,
-  wordmark: ersWordmark
+  wordmark: ersWordmark,
+  history: FORTY_NINERS_HISTORY
 }
 
 export const SEATTLE_SEAHAWKS_TEAM: Team = {
@@ -465,7 +528,8 @@ export const SEATTLE_SEAHAWKS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: WEST_DIVISION,
   uniform: seahawksUniform,
-  wordmark: seahawksWordmark
+  wordmark: seahawksWordmark,
+  history: SEAHAWKS_HISTORY
 }
 
 export const TAMPA_BAY_BUCCANEERS_TEAM: Team = {
@@ -475,7 +539,8 @@ export const TAMPA_BAY_BUCCANEERS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: SOUTH_DIVISION,
   uniform: buccaneersUniform,
-  wordmark: buccaneersWordmark
+  wordmark: buccaneersWordmark,
+  history: BUCCANEERS_HISTORY
 }
 
 export const TENNESSEE_TITANS_TEAM: Team = {
@@ -485,7 +550,8 @@ export const TENNESSEE_TITANS_TEAM: Team = {
   conference: AFC_CONFERENCE,
   division: SOUTH_DIVISION,
   uniform: titansUniform,
-  wordmark: titansWordmark
+  wordmark: titansWordmark,
+  history: TITANS_HISTORY
 }
 
 export const WASHINGTON_COMMANDERS_TEAM: Team = {
@@ -495,8 +561,10 @@ export const WASHINGTON_COMMANDERS_TEAM: Team = {
   conference: NFC_CONFERENCE,
   division: EAST_DIVISION,
   uniform: commandersUniform,
-  wordmark: commandersWordmark
+  wordmark: commandersWordmark,
+  history: COMMANDERS_HISTORY
 }
+
 
 export const TEAMS: Team[] = [
   ARIZONA_CARDINALS_TEAM,
