@@ -2,13 +2,13 @@ import React from 'react'
 import logoHeader from '../../images/logos/NFL_logo-min.svg'
 import './header.css'
 import SubMenu from '../SubMenu/SubMenu.tsx'
-import { ABOUT_GAME_SUBMENU, NFL_SUBMENU, SUPERBOWL_SUBMENU, TEAMS_SUBMENU } from '../../constants/subMenuItems.ts'
+import SUBMENU_ITEMS from '../../constants/subMenuItems.ts'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../store/rootReducer.ts'
 import useMouseHandler from '../../hooks/useMouseHandler.ts'
 import { Link } from 'react-router-dom'
 import { LOGIN_PATHNAME, REGISTER_PATHNAME } from '../../constants/pathName.ts'
-import { ABOUt_GAME, NFL, REGISTRATION, SIGN_IT, SUPERBOWL, TEAMS } from '../../constants/headerNavLink.ts'
+import { HEADER_NAV_LINKS, REGISTRATION, SIGN_IT } from '../../constants/labels.ts'
 
 function Header(): JSX.Element {
 
@@ -17,6 +17,7 @@ function Header(): JSX.Element {
     activeMenuItems: state.submenu.activeMenuItems
   })
   )
+
   const { handleMouseEnter, handleMouseLeave } = useMouseHandler()
   return (
     <header className="header">
@@ -24,26 +25,15 @@ function Header(): JSX.Element {
       <div className='header__container'>
         <nav className='header__navigation'>
           <ul className='header__links-container'>
-            <li className={`header__link ${isOpenedSubMenu && activeMenuItems === ABOUT_GAME_SUBMENU && 'header__link_active'}`}
-              onMouseEnter={handleMouseEnter(ABOUT_GAME_SUBMENU)}
-              onMouseLeave={handleMouseLeave}>
-              {ABOUt_GAME}
-            </li>
-            <li className={`header__link ${isOpenedSubMenu && activeMenuItems === NFL_SUBMENU && 'header__link_active'}`}
-              onMouseEnter={handleMouseEnter(NFL_SUBMENU)}
-              onMouseLeave={handleMouseLeave}>
-              {NFL}
-            </li>
-            <li className={`header__link ${isOpenedSubMenu && activeMenuItems === TEAMS_SUBMENU && 'header__link_active'}`}
-              onMouseEnter={handleMouseEnter(TEAMS_SUBMENU)}
-              onMouseLeave={handleMouseLeave}>
-              {TEAMS}
-            </li>
-            <li className={`header__link ${isOpenedSubMenu && activeMenuItems === SUPERBOWL_SUBMENU && 'header__link_active'}`}
-              onMouseEnter={handleMouseEnter(SUPERBOWL_SUBMENU)}
-              onMouseLeave={handleMouseLeave}>
-              {SUPERBOWL}
-            </li>
+            {SUBMENU_ITEMS.map((item, index) => {
+              return (
+                <li className={`header__link ${isOpenedSubMenu && activeMenuItems === item[index] && 'header__link_active'}`}
+                  onMouseEnter={handleMouseEnter(item)}
+                  onMouseLeave={handleMouseLeave}>
+                  {HEADER_NAV_LINKS[index]}
+                </li>
+              )
+            })}
           </ul>
         </nav>
         <div className='header__links-container'>

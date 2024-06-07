@@ -1,6 +1,0 @@
-export const REGISTRATION: string = 'Регистрация'
-export const SIGN_IT: string = 'Войти'
-export const ABOUt_GAME: string = 'Об игре'
-export const NFL: string = 'NFL'
-export const TEAMS: string = 'Команды'
-export const SUPERBOWL: string = 'Superbowl'
