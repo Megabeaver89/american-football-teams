@@ -1,6 +1,6 @@
-import './TeamInfo.css'
+import './TeamInfoNavigation.css'
 import React, { useState } from 'react'
-import ActiveButtonState from '../../types/interfaces/ActiveButtonState'
+import ActiveButtonState from '../../types/interfaces/ActiveButtonState.ts'
 import { teamInfoList } from '../../constants/teamInfo.ts'
 
 function TeamInfo(): JSX.Element {

@@ -1,6 +1,6 @@
 import React from 'react'
 import Content from '../Content/Content.tsx'
-import TeamInfo from '../TeamInfo/TeamInfo.tsx'
+import TeamInfo from '../TeamInfoNavigation/TeamInfoNavigation.tsx'
 import './FootballTeam.css'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../store/rootReducer.ts'
