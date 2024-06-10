@@ -211,7 +211,7 @@ import {
   commandersWordmark
 } from './teamWordmark.ts'
 
-import Team from '../interfaces/Team.ts'
+import Team from '../types/interfaces/Team.ts'
 
 export const ARIZONA_CARDINALS_TEAM: Team = {
   label: ARIZONA_CARDINALS_LABEL,
@@ -221,7 +221,8 @@ export const ARIZONA_CARDINALS_TEAM: Team = {
   division: WEST_DIVISION,
   uniform: cardinalsUniform,
   wordmark: cardinalsWordmark,
-  history: CARDINALS_HISTORY
+  historyTeam: CARDINALS_HISTORY,
+  stadium: 'asdfasf'
 }
 
 export const ATLANTA_FALCONS_TEAM: Team = {
@@ -232,7 +233,8 @@ export const ATLANTA_FALCONS_TEAM: Team = {
   division: SOUTH_DIVISION,
   uniform: falconsUniform,
   wordmark: falconsWordmark,
-  history: FALCONS_HISTORY
+  historyTeam: FALCONS_HISTORY,
+  stadium: 'saf'
 }
 
 export const BALTIMORE_RAVENS_TEAM: Team = {
@@ -243,7 +245,7 @@ export const BALTIMORE_RAVENS_TEAM: Team = {
   division: NORTH_DIVISION,
   uniform: ravensUniform,
   wordmark: ravensWordmark,
-  history: RAVENS_HISTORY
+  historyTeam: RAVENS_HISTORY
 }
 
 export const BUFFALO_BILLS_TEAM: Team = {
@@ -254,7 +256,7 @@ export const BUFFALO_BILLS_TEAM: Team = {
   division: EAST_DIVISION,
   uniform: billsUniform,
   wordmark: billsWordmark,
-  history: BILLS_HISTORY
+  historyTeam: BILLS_HISTORY
 }
 
 export const CAROLINA_PANTHERS_TEAM: Team = {
@@ -265,7 +267,7 @@ export const CAROLINA_PANTHERS_TEAM: Team = {
   division: SOUTH_DIVISION,
   uniform: panthersUniform,
   wordmark: panthersWordmark,
-  history: PANTHERS_HISTORY
+  historyTeam: PANTHERS_HISTORY
 }
 
 export const CHICAGO_BEARS_TEAM: Team = {
@@ -276,7 +278,7 @@ export const CHICAGO_BEARS_TEAM: Team = {
   division: NORTH_DIVISION,
   uniform: bearsUniform,
   wordmark: bearsWordmark,
-  history: BEARS_HISTORY
+  historyTeam: BEARS_HISTORY
 }
 
 export const CINCINNATI_BENGALS_TEAM: Team = {
@@ -287,7 +289,7 @@ export const CINCINNATI_BENGALS_TEAM: Team = {
   division: NORTH_DIVISION,
   uniform: bengalsUniform,
   wordmark: bengalsWordmark,
-  history: BENGALS_HISTORY
+  historyTeam: BENGALS_HISTORY
 }
 
 export const CLEVELAND_BROWNS_TEAM: Team = {
@@ -298,7 +300,7 @@ export const CLEVELAND_BROWNS_TEAM: Team = {
   division: NORTH_DIVISION,
   uniform: brownsUniform,
   wordmark: brownsWordmark,
-  history: BROWNS_HISTORY
+  historyTeam: BROWNS_HISTORY
 }
 
 export const DALLAS_COWBOYS_TEAM: Team = {
@@ -309,7 +311,7 @@ export const DALLAS_COWBOYS_TEAM: Team = {
   division: EAST_DIVISION,
   uniform: cowboysUniform,
   wordmark: cowboysWordmark,
-  history: COWBOYS_HISTORY
+  historyTeam: COWBOYS_HISTORY
 }
 
 export const DENVER_BRONCOS_TEAM: Team = {
@@ -320,7 +322,7 @@ export const DENVER_BRONCOS_TEAM: Team = {
   division: WEST_DIVISION,
   uniform: broncosUniform,
   wordmark: broncosWordmark,
-  history: BRONCOS_HISTORY
+  historyTeam: BRONCOS_HISTORY
 }
 
 export const DETROIT_LIONS_TEAM: Team = {
@@ -331,7 +333,7 @@ export const DETROIT_LIONS_TEAM: Team = {
   division: NORTH_DIVISION,
   uniform: lionsUniform,
   wordmark: lionsWordmark,
-  history: LIONS_HISTORY
+  historyTeam: LIONS_HISTORY
 }
 
 export const GREEN_BAY_PACKERS_TEAM: Team = {
@@ -342,7 +344,7 @@ export const GREEN_BAY_PACKERS_TEAM: Team = {
   division: NORTH_DIVISION,
   uniform: packersUniform,
   wordmark: packersWordmark,
-  history: PACKERS_HISTORY
+  historyTeam: PACKERS_HISTORY
 }
 
 export const HOUSTON_TEXANS_TEAM: Team = {
@@ -353,7 +355,7 @@ export const HOUSTON_TEXANS_TEAM: Team = {
   division: SOUTH_DIVISION,
   uniform: texansUniform,
   wordmark: texansWordmark,
-  history: TEXANS_HISTORY
+  historyTeam: TEXANS_HISTORY
 }
 
 export const INDIANAPOLIS_COLTS_TEAM: Team = {
@@ -364,7 +366,7 @@ export const INDIANAPOLIS_COLTS_TEAM: Team = {
   division: SOUTH_DIVISION,
   uniform: coltsUniform,
   wordmark: coltsWordmark,
-  history: COLTS_HISTORY
+  historyTeam: COLTS_HISTORY
 }
 
 export const JACKSONVILLE_JAGUARS_TEAM: Team = {
@@ -375,7 +377,7 @@ export const JACKSONVILLE_JAGUARS_TEAM: Team = {
   division: SOUTH_DIVISION,
   uniform: jaguarsUniform,
   wordmark: jaguarsWordmark,
-  history: JAGUARS_HISTORY
+  historyTeam: JAGUARS_HISTORY
 }
 
 export const KANSAS_CITY_CHIEFS_TEAM: Team = {
@@ -386,7 +388,7 @@ export const KANSAS_CITY_CHIEFS_TEAM: Team = {
   division: WEST_DIVISION,
   uniform: chiefsUniform,
   wordmark: chiefsWordmark,
-  history: CHIEFS_HISTORY
+  historyTeam: CHIEFS_HISTORY
 }
 
 export const LAS_VEGAS_RAIDERS_TEAM: Team = {
@@ -397,7 +399,7 @@ export const LAS_VEGAS_RAIDERS_TEAM: Team = {
   division: WEST_DIVISION,
   uniform: raidersUniform,
   wordmark: raidersWordmark,
-  history: RAIDERS_HISTORY
+  historyTeam: RAIDERS_HISTORY
 }
 
 export const LOS_ANGELES_CHARGERS_TEAM: Team = {
@@ -408,7 +410,7 @@ export const LOS_ANGELES_CHARGERS_TEAM: Team = {
   division: WEST_DIVISION,
   uniform: chargersUniform,
   wordmark: chargersWordmark,
-  history: CHARGERS_HISTORY
+  historyTeam: CHARGERS_HISTORY
 }
 
 export const LOS_ANGELES_RAMS_TEAM: Team = {
@@ -419,7 +421,7 @@ export const LOS_ANGELES_RAMS_TEAM: Team = {
   division: WEST_DIVISION,
   uniform: ramsUniform,
   wordmark: ramsWordmark,
-  history: RAMS_HISTORY
+  historyTeam: RAMS_HISTORY
 }
 
 export const MIAMI_DOLPHINS_TEAM: Team = {
@@ -430,7 +432,7 @@ export const MIAMI_DOLPHINS_TEAM: Team = {
   division: EAST_DIVISION,
   uniform: dolphinsUniform,
   wordmark: dolphinsWordmark,
-  history: DOLPHINS_HISTORY
+  historyTeam: DOLPHINS_HISTORY
 }
 
 export const MINNESOTA_VIKINGS_TEAM: Team = {
@@ -441,7 +443,7 @@ export const MINNESOTA_VIKINGS_TEAM: Team = {
   division: NORTH_DIVISION,
   uniform: vikingsUniform,
   wordmark: vikingsWordmark,
-  history: VIKINGS_HISTORY
+  historyTeam: VIKINGS_HISTORY
 }
 
 export const NEW_ENGLAND_PATRIOTS_TEAM: Team = {
@@ -452,7 +454,7 @@ export const NEW_ENGLAND_PATRIOTS_TEAM: Team = {
   division: EAST_DIVISION,
   uniform: patriotsUniform,
   wordmark: patriotsWordmark,
-  history: PATRIOTS_HISTORY
+  historyTeam: PATRIOTS_HISTORY
 }
 
 export const NEW_ORLEANS_SAINTS_TEAM: Team = {
@@ -463,7 +465,7 @@ export const NEW_ORLEANS_SAINTS_TEAM: Team = {
   division: SOUTH_DIVISION,
   uniform: saintsUniform,
   wordmark: saintsWordmark,
-  history: SAINTS_HISTORY
+  historyTeam: SAINTS_HISTORY
 }
 
 export const NEW_YORK_GIANTS_TEAM: Team = {
@@ -474,7 +476,7 @@ export const NEW_YORK_GIANTS_TEAM: Team = {
   division: EAST_DIVISION,
   uniform: giantsUniform,
   wordmark: giantsWordmark,
-  history: GIANTS_HISTORY
+  historyTeam: GIANTS_HISTORY
 }
 
 export const NEW_YORK_JETS_TEAM: Team = {
@@ -485,7 +487,7 @@ export const NEW_YORK_JETS_TEAM: Team = {
   division: EAST_DIVISION,
   uniform: jetsUniform,
   wordmark: jetsWordmark,
-  history: JETS_HISTORY
+  historyTeam: JETS_HISTORY
 }
 
 export const PHILADELPHIA_EAGLES_TEAM: Team = {
@@ -496,7 +498,7 @@ export const PHILADELPHIA_EAGLES_TEAM: Team = {
   division: EAST_DIVISION,
   uniform: eaglesUniform,
   wordmark: eaglesWordmark,
-  history: EAGLES_HISTORY
+  historyTeam: EAGLES_HISTORY
 }
 
 export const PITTSBURGH_STEELERS_TEAM: Team = {
@@ -507,7 +509,7 @@ export const PITTSBURGH_STEELERS_TEAM: Team = {
   division: NORTH_DIVISION,
   uniform: steelersUniform,
   wordmark: steelersWordmark,
-  history: STEELERS_HISTORY
+  historyTeam: STEELERS_HISTORY
 }
 
 export const SAN_FRANCISCO_49ERS_TEAM: Team = {
@@ -518,7 +520,7 @@ export const SAN_FRANCISCO_49ERS_TEAM: Team = {
   division: WEST_DIVISION,
   uniform: ersUniform,
   wordmark: ersWordmark,
-  history: FORTY_NINERS_HISTORY
+  historyTeam: FORTY_NINERS_HISTORY
 }
 
 export const SEATTLE_SEAHAWKS_TEAM: Team = {
@@ -529,7 +531,7 @@ export const SEATTLE_SEAHAWKS_TEAM: Team = {
   division: WEST_DIVISION,
   uniform: seahawksUniform,
   wordmark: seahawksWordmark,
-  history: SEAHAWKS_HISTORY
+  historyTeam: SEAHAWKS_HISTORY
 }
 
 export const TAMPA_BAY_BUCCANEERS_TEAM: Team = {
@@ -540,7 +542,7 @@ export const TAMPA_BAY_BUCCANEERS_TEAM: Team = {
   division: SOUTH_DIVISION,
   uniform: buccaneersUniform,
   wordmark: buccaneersWordmark,
-  history: BUCCANEERS_HISTORY
+  historyTeam: BUCCANEERS_HISTORY
 }
 
 export const TENNESSEE_TITANS_TEAM: Team = {
@@ -551,7 +553,7 @@ export const TENNESSEE_TITANS_TEAM: Team = {
   division: SOUTH_DIVISION,
   uniform: titansUniform,
   wordmark: titansWordmark,
-  history: TITANS_HISTORY
+  historyTeam: TITANS_HISTORY
 }
 
 export const WASHINGTON_COMMANDERS_TEAM: Team = {
@@ -562,7 +564,7 @@ export const WASHINGTON_COMMANDERS_TEAM: Team = {
   division: EAST_DIVISION,
   uniform: commandersUniform,
   wordmark: commandersWordmark,
-  history: COMMANDERS_HISTORY
+  historyTeam: COMMANDERS_HISTORY
 }
 
 

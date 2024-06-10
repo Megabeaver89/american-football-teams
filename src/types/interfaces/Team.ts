@@ -8,7 +8,7 @@ export default interface Team {
   division: string,
   wordmark: string,
   uniform: string,
-  history: string,
+  historyTeam: string,
   stadium: string,
 }
 

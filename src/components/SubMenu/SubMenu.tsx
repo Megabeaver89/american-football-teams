@@ -10,13 +10,15 @@ import Team from '../../types/interfaces/Team.ts'
 import { toggleSubMenu } from '../../store/slices/subMenuSlice.ts'
 import { SubMenuItem } from '../../types/submenuTypes.ts'
 import { isTeam } from '../../types/typesGuards/TeamTypeGuard.ts'
+import { changeActiveButton, changeButtonsList, changeInfoList } from '../../store/slices/infoButtonsListSlice.ts'
+import { teamInfoList } from '../../constants/teamInfo.ts'
 
 function SubMenu(): JSX.Element {
   const dispatch = useDispatch()
   const { isOpened, items, position } = useSelector((state: RootState) => ({
     isOpened: state.submenu.isOpenedSubMenu,
     items: state.submenu.activeMenuItems,
-    position: state.submenu.position
+    position: state.submenu.position,
   })
   )
 
@@ -30,7 +32,12 @@ function SubMenu(): JSX.Element {
 
   const handleClickLink = (newTeam?: Team,) => () => {
     dispatch(toggleSubMenu(false))
-    newTeam && dispatch(changeTeamActive(newTeam))
+    if (newTeam) {
+      dispatch(changeTeamActive(newTeam))
+      dispatch(changeButtonsList({ btnList: teamInfoList }))
+      const list = [newTeam.historyTeam, newTeam.stadium, 'какая-то херня']
+      dispatch(changeInfoList({ infoList: list }))
+    }
   }
 
   return (

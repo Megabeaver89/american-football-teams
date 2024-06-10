@@ -3,7 +3,7 @@ import Content from '../Content/Content.tsx'
 import './FootballTeam.css'
 import { useSelector } from 'react-redux'
 import { RootState } from '../../store/rootReducer.ts'
-import TeamInfoNavigation from '../TeamInfoNavigation/TeamInfoNavigation.tsx'
+import InfoNavigation from '../InfoNavigation/InfoNavigation.tsx'
 
 
 function FotballTeam(): JSX.Element {
@@ -28,7 +28,7 @@ function FotballTeam(): JSX.Element {
           </div>
         </div>
       </div>
-      <TeamInfoNavigation />
+      <InfoNavigation />
     </Content>
   )
 }
