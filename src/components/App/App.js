@@ -10,7 +10,7 @@ function App() {
       <Header />
       <FootballTeam />
 
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
   )
